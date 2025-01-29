@@ -1,4 +1,4 @@
-package main.student_management;
+package main.singly_linked_list.student_management;
 
 public class Student {
     String name;

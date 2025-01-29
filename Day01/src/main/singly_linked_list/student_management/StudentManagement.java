@@ -1,4 +1,4 @@
-package main.student_management;
+package main.singly_linked_list.student_management;
 
 public class StudentManagement {
     public static void main(String[] args) {
@@ -10,14 +10,14 @@ public class StudentManagement {
         System.out.println("All Students:");
         ls.display();
 
-        System.out.println("\nDisplay main.student_management.Student by Roll Number:");
+        System.out.println("\nDisplay main.singly_linked_list.student_management.Student by Roll Number:");
         ls.displayByRoll(202);
 
         System.out.println("\nUpgrade Grade:");
         ls.upgradeGrade(15, "A");
         ls.display();
 
-        System.out.println("\nDelete a main.student_management.Student:");
+        System.out.println("\nDelete a main.singly_linked_list.student_management.Student:");
         ls.delete(47);
         ls.display();
     }

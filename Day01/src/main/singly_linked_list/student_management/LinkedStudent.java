@@ -1,4 +1,4 @@
-package main.student_management;
+package main.singly_linked_list.student_management;
 
 public class LinkedStudent {
     Student student;
@@ -38,7 +38,7 @@ public class LinkedStudent {
     // Display all students
     public void display() {
         if (student == null) {
-            System.out.println("main.student_management.Student list is empty.");
+            System.out.println("main.singly_linked_list.student_management.Student list is empty.");
             return;
         }
 
@@ -55,14 +55,14 @@ public class LinkedStudent {
     // Delete a student by roll number
     public void delete(int rollno) {
         if (student == null) {
-            System.out.println("main.student_management.Student list is empty. Nothing to delete.");
+            System.out.println("main.singly_linked_list.student_management.Student list is empty. Nothing to delete.");
             return;
         }
 
         // If the head node is to be deleted
         if (student.rollno == rollno) {
             student = student.next;
-            System.out.println("main.student_management.Student with roll number " + rollno + " deleted.");
+            System.out.println("main.singly_linked_list.student_management.Student with roll number " + rollno + " deleted.");
             return;
         }
 
@@ -75,18 +75,18 @@ public class LinkedStudent {
         }
 
         if (current == null) {
-            System.out.println("main.student_management.Student with roll number " + rollno + " not found.");
+            System.out.println("main.singly_linked_list.student_management.Student with roll number " + rollno + " not found.");
             return;
         }
 
         previous.next = current.next;
-        System.out.println("main.student_management.Student with roll number " + rollno + " deleted.");
+        System.out.println("main.singly_linked_list.student_management.Student with roll number " + rollno + " deleted.");
     }
 
     // Display a student by roll number
     public void displayByRoll(int rollno) {
         if (student == null) {
-            System.out.println("main.student_management.Student list is empty.");
+            System.out.println("main.singly_linked_list.student_management.Student list is empty.");
             return;
         }
 
@@ -102,13 +102,13 @@ public class LinkedStudent {
             t = t.next;
         }
 
-        System.out.println("main.student_management.Student with roll number " + rollno + " not found.");
+        System.out.println("main.singly_linked_list.student_management.Student with roll number " + rollno + " not found.");
     }
 
     // Upgrade the grade of a student by roll number
     public void upgradeGrade(int rollno, String grade) {
         if (student == null) {
-            System.out.println("main.student_management.Student list is empty.");
+            System.out.println("main.singly_linked_list.student_management.Student list is empty.");
             return;
         }
 
@@ -122,6 +122,6 @@ public class LinkedStudent {
             t = t.next;
         }
 
-        System.out.println("main.student_management.Student with roll number " + rollno + " not found.");
+        System.out.println("main.singly_linked_list.student_management.Student with roll number " + rollno + " not found.");
     }
 }
