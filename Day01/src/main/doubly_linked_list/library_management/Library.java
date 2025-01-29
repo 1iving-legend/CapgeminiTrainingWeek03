@@ -3,7 +3,7 @@ package main.doubly_linked_list.library_management;
 public class Library {
     private Book head = null;
     private Book tail = null;
-    private int bookCount = 0;
+    private static int bookCount = 0;
 
     // Add a new book at the beginning
     public void addBookAtBeginning(String title, String author, String genre, int bookId, boolean isAvailable) {

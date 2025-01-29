@@ -145,9 +145,12 @@ public class SocialMedia {
     // Count the number of friends for each user
     public void countFriends() {
         User current = head;
+        int count=1;
         while (current != null) {
-            System.out.println(current.name + " has " + current.friendIds.size() + " friends.");
+
             current = current.next;
+            count++;
         }
+        System.out.println("total friend :" + count);
     }
 }
