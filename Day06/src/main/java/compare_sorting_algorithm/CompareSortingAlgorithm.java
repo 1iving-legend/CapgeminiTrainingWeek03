@@ -2,7 +2,7 @@ package compare_sorting_algorithm;
 
 public class CompareSortingAlgorithm {
 
-    static int[] bubbleSort(int[] arr) {
+    public static int[] bubbleSort(int[] arr) {
         int n = arr.length;
 
         // Outer loop for passes
@@ -23,7 +23,7 @@ public class CompareSortingAlgorithm {
 
     //merge sort algorithm
 
-    static void merge(int[] arr, int si, int mid, int ei) {
+   public  static void merge(int[] arr, int si, int mid, int ei) {
         int[] merged = new int[ei - si + 1];
         int indx1 = si, indx2 = mid + 1, x = 0;
 
@@ -53,7 +53,7 @@ public class CompareSortingAlgorithm {
     }
 
     // Dividing the array into two halves
-    static void mergesort(int[] arr, int si, int ei) {
+    public static void mergesort(int[] arr, int si, int ei) {
         if (si >= ei) {
             return; // Base condition for recursion
         }
@@ -97,7 +97,7 @@ public class CompareSortingAlgorithm {
     }
 
     // QuickSort function that recursively sorts the array
-    static void quickSort(int[] arr, int low, int high) {
+    public static void quickSort(int[] arr, int low, int high) {
         if (low >= high) {
             return;  // Base condition: if array has one or no elements
         }
